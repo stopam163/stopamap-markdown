@@ -1,8 +1,1 @@
 blank_issues_enabled: false
-contact_links:
-  - name: Architecture and usage
-    url: https://github.com/<account>/stopamap-markdown/blob/main/docs/architecture.md
-    about: Read the design and coordinate model before reporting parser bugs.
-  - name: Security report
-    url: https://github.com/<account>/stopamap-markdown/security/policy
-    about: Please report vulnerabilities privately, not in a public issue.
