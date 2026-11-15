@@ -1,0 +1,35 @@
+name: Release package
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Test
+        run: dotnet test --configuration Release
+
+      - name: Pack
+        run: dotnet pack src/Stopamap.Markdown/Stopamap.Markdown.csproj --configuration Release --output artifacts
+
+      - name: Upload package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nuget-packages
+          path: artifacts/*
+          if-no-files-found: error

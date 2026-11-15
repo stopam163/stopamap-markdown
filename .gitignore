@@ -1,0 +1,26 @@
+# Build output
+bin/
+obj/
+artifacts/
+TestResults/
+coverage/
+*.user
+*.suo
+
+# IDE
+.vs/
+.idea/
+*.swp
+*.tmp
+
+# Package output
+*.nupkg
+*.snupkg
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local secrets
+.env
+.env.*

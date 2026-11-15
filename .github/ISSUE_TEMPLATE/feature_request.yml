@@ -1,0 +1,36 @@
+name: Feature request
+description: Propose a parser capability or API improvement
+title: "[Feature]: "
+labels: ["type: feature", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What real editing or parsing problem does this solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Include Markdown syntax, expected block model, and API shape.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Existing workarounds or other designs.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and discussions.
+          required: true
+        - label: This does not require UI or application-service dependencies in the core.
+          required: true

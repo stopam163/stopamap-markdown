@@ -1,0 +1,70 @@
+name: Bug report
+description: Report a parser, coordinate, or build problem
+title: "[Bug]: "
+labels: ["type: bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please keep the reproduction minimal.
+
+  - type: textarea
+    id: input
+    attributes:
+      label: Minimal Markdown input
+      description: Paste the exact input inside a fenced code block.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: Block types, inline runs, or source offsets you expected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Output, exception, screenshot, or failing test.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Library version or commit
+      placeholder: 0.1.0 or a commit hash
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: dotnet
+    attributes:
+      label: .NET SDK version
+      placeholder: dotnet --version
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true

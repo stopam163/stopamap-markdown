@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Stopamap.Markdown</RootNamespace>
+    <AssemblyName>Stopamap.Markdown</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>Stopamap.Markdown</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Stopamap contributors</Authors>
+    <Description>Source-mapped Markdown parser and live-document coordinate layer for editors.</Description>
+    <PackageTags>markdown;parser;live-preview;editor;source-map</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
