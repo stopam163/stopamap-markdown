@@ -37,7 +37,7 @@ Stopamap.Markdown 把“源码坐标”作为核心能力：
 环境要求：.NET 9 SDK。
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/stopam163/stopamap-markdown.git
 cd stopamap-markdown
 dotnet build
 dotnet test

@@ -11,6 +11,8 @@
     <Description>Source-mapped Markdown parser and live-document coordinate layer for editors.</Description>
     <PackageTags>markdown;parser;live-preview;editor;source-map</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/stopam163/stopamap-markdown</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>

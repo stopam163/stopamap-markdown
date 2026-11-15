@@ -23,3 +23,6 @@ and [Semantic Versioning](https://semver.org/).
 - Outline extraction and word/character/line counting.
 - Cross-platform CI and xUnit test suite.
 
+[Unreleased]: https://github.com/stopam163/stopamap-markdown/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/stopam163/stopamap-markdown/releases/tag/v0.1.0
+

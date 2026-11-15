@@ -37,7 +37,7 @@ The repaint layer is intentionally **not** in this repository. Avalonia controls
 Requirements: .NET 9 SDK.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/stopam163/stopamap-markdown.git
 cd stopamap-markdown
 dotnet build
 dotnet test
